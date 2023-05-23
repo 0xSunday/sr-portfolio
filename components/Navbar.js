@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -18,6 +18,7 @@ const Navbar = () => {
           <Image
             onClick={() => {
               setActive("");
+              setToggle(false);
               window.scrollTo(0, 0);
             }}
             className="w-20"
@@ -63,7 +64,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(false);
                     setActive(link.title);
                   }}
                   className={`text-2xl hover ${

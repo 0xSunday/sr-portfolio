@@ -206,7 +206,8 @@
 
 .hover {
   --s: 0.2em; /* the thickness of the line */
-  --c: RGB(58, 123, 176); /* the color */
+  /* --c: RGB(58, 123, 176);  */
+  --c: #915eff;
 
   padding-bottom: var(--s);
   background: linear-gradient(90deg, var(--c) 50%, #000 0)
@@ -218,10 +219,10 @@
 }
 .hover:hover {
   --_p: 100%;
-  color: RGB(70, 161, 205);
+  color: #915eff;
 }
 
 .active {
   --_p: 100%;
-  color: RGB(70, 161, 205);
+  color: #915eff;
 }
