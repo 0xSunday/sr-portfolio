@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sunil | Portfolio</title>
+        <title> Sunil | Portfolio</title>
         <meta name="sunil reddy" content="sunil reddy personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shotcut icon" href="/srlogo.png" />

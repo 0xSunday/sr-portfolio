@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`w-full  sm:px-16 px-5 sm:py-10 py-6 flex justify-between items-center `}
+      className={`w-full  sm:px-16 px-5 sm:py-6 py-4 flex justify-between items-center `}
     >
       <div className=" flex  items-center justify-center gap-3 ">
         <Link href="/">
@@ -59,7 +59,7 @@ const Navbar = () => {
           alt="menu"
         />
         {toggle && (
-          <div className="p-6  black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
+          <div className="p-6 backdrop-blur-md border-2 border-[#915eff] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
             <ul className={` gap-5 flex flex-col lg:block items-center`}>
               {navLinks.map((link) => (
                 <li
