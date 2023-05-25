@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`w-full  sm:px-16 px-5 sm:py-6 py-4 flex justify-between items-center `}
+      className={`w-full relative z-10  sm:pr-16 pr-5 sm:pl-14 pl-4 sm:py-6 py-4 flex justify-between items-center `}
     >
       <div className=" flex  items-center justify-center gap-3 ">
         <Link href="/">

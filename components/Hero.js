@@ -1,6 +1,8 @@
 "use client";
 import { styles } from "@/styles";
 import React from "react";
+import { motion } from "framer-motion";
+
 import { Typewriter, useTypewriter } from "react-simple-typewriter";
 import { ComputersCanvas } from "./canvas";
 
@@ -12,11 +14,11 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <section className="relative w-full h-screen mx-auto sm:px-16 px-5 sm:pt-0 pt-6">
-      <div className="flex flex-row items-start gap-5">
+    <section className="relative -z-0 w-full h-screen mx-auto sm:px-16 px-5 -mt-20">
+      <div className=" absolute top-24 z-10 flex flex-row items-start gap-5">
         <div className="flex flex-col justify-center items-center">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-56 h-52 violet-gradient" />
+          <div className="w-1 sm:h-80 h-60 violet-gradient" />
         </div>
         <div className="flex flex-col gap-5 w-full  ">
           <h1
@@ -25,12 +27,30 @@ const Hero = () => {
             I'm <span className="text-[#915eff]">{text}</span>
           </h1>
           <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[20px] lg:leading-[40px]">
-            Full Stack Web  And <br className="md:hidden block" /> Blockchain
+            Full Stack Web And <br className="md:hidden block" /> Blockchain
             Developer{" "}
           </p>
         </div>
       </div>
       <ComputersCanvas />
+
+      <div className="absolute xs:bottom-10 bottom-6 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[30px] h-[54px] rounded-3xl sm:border-4 border-2 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
