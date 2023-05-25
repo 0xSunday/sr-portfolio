@@ -14,8 +14,8 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <section className="relative -z-0 w-full h-screen mx-auto sm:px-16 px-5 -mt-20">
-      <div className=" absolute top-24 z-10 flex flex-row items-start gap-5">
+    <section className="relative -z-0 w-full h-screen mx-auto -mt-24">
+      <div className=" absolute top-24 z-10 right-0 left-0 sm:pl-16 pl:5  flex flex-row items-start gap-5">
         <div className="flex flex-col justify-center items-center">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-60 violet-gradient" />
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-10 bottom-6 w-full flex justify-center items-center">
+      <div className="absolute sm:bottom-8 bottom-20 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[54px] rounded-3xl sm:border-4 border-2 border-secondary flex justify-center items-start p-2">
             <motion.div
