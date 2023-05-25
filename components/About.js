@@ -43,8 +43,8 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 const About = () => {
   return (
-    <>
-      <motion.div className="" variants={textVariant()}>
+    <div id="about">
+      <motion.div variants={textVariant()}>
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
           Introduction
         </p>
@@ -75,7 +75,7 @@ const About = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

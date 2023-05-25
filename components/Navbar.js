@@ -42,7 +42,7 @@ const Navbar = () => {
             }`}
             key={link.id}
           >
-            <Link href={`#${link.id}`}>{link.title}</Link>
+            <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>
@@ -72,9 +72,9 @@ const Navbar = () => {
                   }`}
                   key={link.id}
                 >
-                  <Link className="" href={`#${link.id}`}>
+                  <a className="" href={`#${link.id}`}>
                     {link.title}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
