@@ -1,9 +1,19 @@
-import React from 'react'
+"use client";
+import React from "react";
 
+import { SectionWrapper } from "./hoc";
+import { technologies } from "@/data";
+import { BallCanvas } from "./canvas";
 const Skills = () => {
   return (
-    <div>Skills</div>
-  )
-}
+    <div className="flex flex-row flex-wrap justify-center gap-10">
+      {technologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} name={technology.name} />
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default Skills
+export default SectionWrapper(Skills, "skills");

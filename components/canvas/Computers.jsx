@@ -1,3 +1,4 @@
+"use client";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -8,7 +9,7 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
-    <mesh >
+    <mesh>
       <hemisphereLight intensity={0.7} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}

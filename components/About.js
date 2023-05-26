@@ -10,7 +10,6 @@ import { fadeIn, textVariant } from "../motion";
 import Image from "next/image";
 
 const ServiceCard = ({ index, title, icon }) => {
-  console.log(icon);
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div

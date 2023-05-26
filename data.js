@@ -22,7 +22,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "./public/assets";
 
 export const navLinks = [
@@ -30,19 +29,20 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
+
+  // {
+  //   id: "experience",
+  //   title: "Experience",
+  // },
+
+  {
+    id: "skills",
+    title: "Skills",
+  },
   {
     id: "projects",
     title: "Projects",
   },
-  {
-    id: "experience",
-    title: "Experience",
-  },
-
-  // {
-  //   id: "skills",
-  //   title: "Skills",
-  // },
 
   {
     id: "contact",
@@ -71,56 +71,62 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "html",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "css",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "javascript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "typescript",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "reactjs",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "nextjs",
+    icon: git,
+  },
+  {
+    name: "redux",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "tailwind",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "nodejs",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "mongodb",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+
   {
     name: "git",
     icon: git,
   },
+
   {
-    name: "figma",
-    icon: figma,
+    name: "solidity",
+    icon: git,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "threejs",
+    icon: git,
+  },
+  {
+    name: "c++",
+    icon: git,
   },
 ];
 
