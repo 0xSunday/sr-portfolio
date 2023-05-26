@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Links from "@/components/Links";
+import StarsCanvas from "@/components/canvas/Stars";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,14 +29,15 @@ export default function Home() {
           <Hero />
         </div>
 
-        <About />
-        <Skills />
-        <Projects />
+        {/* <About /> */}
+        {/* <Skills /> */}
+        {/* <Projects /> */}
         {/* <Experience /> */}
 
         <div>
-          <Contact />
-          <Links />
+          {/* <Contact /> */}
+          {/* <StarsCanvas /> */}
+          {/* <Links /> */}
         </div>
       </div>
     </>
