@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./hoc";
 import { projects } from "@/data";
 import ProjectCard from "./hoc/ProjectCard";
+import { github } from "@/public/assets";
+
+import Image from "next/image";
+import Tilt from "react-parallax-tilt";
+
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import Link from "next/link";
 const Projects = () => {
   return (
     <>
@@ -29,10 +36,18 @@ const Projects = () => {
           and manage projects effectively.
         </motion.p>
       </motion.div>
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className="flex flex-row justify-center items-center">
+        <div className="mt-20 flex flex-wrap gap-7">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+
+        <div className="absolute xl:right-0 bottom-0 xl:bottom-0 xl:top-80 flex justify-center items-center">
+          <Link href="/projects">
+            <BsFillArrowRightCircleFill size={50} />
+          </Link>
+        </div>
       </div>
     </>
   );
