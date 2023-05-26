@@ -30,12 +30,12 @@ export default function Home() {
         </div>
 
         <About />
-        <Skills />
-        {/* <Projects /> */}
+        {/* <Skills /> */}
+        <Projects />
         {/* <Experience /> */}
 
         <div>
-          {/* <Contact /> */}
+          <Contact />
           {/* <StarsCanvas /> */}
           {/* <Links /> */}
         </div>
