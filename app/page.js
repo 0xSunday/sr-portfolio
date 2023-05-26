@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <About />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Projects /> */}
         {/* <Experience /> */}
 
