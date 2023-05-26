@@ -9,6 +9,7 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import Link from "next/link";
 
 const Ball = (props) => {
   const url = "/assets/tech/" + props.name + ".png";
@@ -39,7 +40,7 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon, name }) => {
+const BallCanvas = ({ icon, name, link }) => {
   return (
     <Canvas
       frameloop="demand"
