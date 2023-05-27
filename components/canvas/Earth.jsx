@@ -13,7 +13,6 @@ const Earth = () => {
 };
 
 const EarthCanvas = () => {
-  const computer = useGLTF("./planet/scene.gltf");
   return (
     <Canvas
       shadows
