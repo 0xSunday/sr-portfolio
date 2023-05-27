@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Ball = (props) => {
   const url = "/assets/tech/" + props.name + ".png";
-  const decal = useTexture(url);
+  const [decal] = useTexture([url]);
   // const decal = useTexture('/assets/bgImg/herobg.png');
 
   return (

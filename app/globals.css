@@ -226,3 +226,7 @@
   --_p: 100%;
   color: #915eff;
 }
+
+.hero {
+  background-image: url("/assets/bgImg/herobg.png");
+}

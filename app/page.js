@@ -24,13 +24,13 @@ export default function Home() {
         <link rel="shotcut icon" href="/srlogo.png" />
       </Head>
       <div className="flex flex-col relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="hero bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
 
         <About />
-        {/* <Skills /> */}
+        <Skills />
         <Projects />
         {/* <Experience /> */}
 
